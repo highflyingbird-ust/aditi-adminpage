@@ -37,7 +37,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 	<br><br><br><br><br><br>
 
-    <table border=1 align=center;><caption style=color:white;background-color:Tomato;>&nbsp;&nbsp;&nbsp;&nbsp;CLIENT DETAILS</caption>
+    <table border=1 align=center><caption style=color:white;background-color:Tomato;>&nbsp;&nbsp;&nbsp;&nbsp;CLIENT DETAILS</caption>
        <tr bgcolor=#87cefa;>
 			<th>id</th>
 			<th>client_name</th>
