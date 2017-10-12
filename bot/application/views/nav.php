@@ -42,13 +42,13 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div>
   <div class="w3-bar-block">
     <a href="" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
-    <a href="<?php echo base_url("index.php/seller_ctrl/dash") ?>" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-users fa-fw"></i>  Home</a>
+    <!-- <a href="<?php echo base_url("index.php/seller_ctrl/dash") ?>" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-users fa-fw"></i>  Home</a>
     <a href="<?php echo base_url("index.php/seller_ctrl/insert") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-plus-square fa-fw"></i>  Insert</a>
     <a href="<?php echo base_url("index.php/seller_ctrl/search") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-edit fa-fw"></i>  Update</a>
     <a href="<?php echo base_url("index.php/seller_ctrl/delete") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-remove fa-fw"></i>  Delete</a>
     <a href="<?php echo base_url("index.php/seller_ctrl/view") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-diamond fa-fw"></i>  View</a>
     <a href="<?php echo base_url("Classes/excel.php") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bell fa-fw"></i>  excel</a>
-    <a href="<?php echo base_url("index.php/seller_ctrl/excel_converter") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bank fa-fw"></i>  excel converters</a>
+    <a href="<?php echo base_url("index.php/seller_ctrl/excel_converter") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bank fa-fw"></i>  excel converters</a> -->
     <a href="<?php echo base_url("index.php/seller_ctrl/clients") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-plus-square fa-fw"></i>  New Client</a>
     <a href="<?php echo base_url("index.php/seller_ctrl/client_view") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-diamond fa-fw"></i>  Client Details</a>
     <!-- <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history fa-fw"></i>  History</a> -->
