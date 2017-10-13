@@ -75,8 +75,8 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '35.201.178.40',
-	'username' => 'root',
+	'hostname' => 'aditi-admin.mysql.database.azure.com',
+	'username' => 'aditi.admin@aditi-admin',
 	'password' => 'Bot@1234',
 	'database' => 'aditi_dashboard',
 	'dbdriver' => 'mysqli',
