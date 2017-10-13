@@ -55,9 +55,9 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 					<td><br><br></td><td></td>
 				</tr> -->
 				<tr>
-					<td>Client Name&nbsp;&nbsp;&nbsp;</td>
+					<td>Client&nbsp;&nbsp;&nbsp;</td>
 					<td>
-						<textarea name="client_name" id="client_name" cols="50"></textarea>
+						<textarea name="client" id="client" cols="50"></textarea>
 					</td>
 				</tr>
 				<!-- <tr>

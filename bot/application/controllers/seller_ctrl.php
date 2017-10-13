@@ -176,7 +176,7 @@ class Seller_ctrl extends CI_Controller
 		$id = $this->input->post('id');
 		$data1 = array(
 		'id' => $this->input->post('id'),
-		'client_name' => $this->input->post('client_name'),
+		'client' => $this->input->post('client'),
 		'primary_poc' => $this->input->post('primary_poc'),
 		'sector' => $this->input->post('sector'),
 		'demo_type' => $this->input->post('demo_type'),

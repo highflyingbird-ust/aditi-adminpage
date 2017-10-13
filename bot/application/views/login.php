@@ -37,7 +37,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <nav class="navbar navbar-fixed-top" role="banner">
             <div class="container">
                 <div class="navbar-header">
-                  <a class="navbar-brand" href=""> BOT</a>
+                  <a class="navbar-brand" href=""> Aditi</a>
                 </div>				
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">

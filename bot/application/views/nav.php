@@ -38,11 +38,11 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div>
   <hr>
   <div class="w3-container">
-    <h5>Dashboard</h5>
+    <h5 class="w3-bar-item w3-button w3-padding w3-blue">Dashboard</h5>
   </div>
   <div class="w3-bar-block">
     <a href="" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
-    <!-- <a href="<?php echo base_url("index.php/seller_ctrl/dash") ?>" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-users fa-fw"></i>  Home</a>
+    <!-- <a href="<?php echo base_url("index.php/seller_ctrl/dash") ?>" class="w3-bar-item w3-button w3-padding "><i class="fa fa-users fa-fw"></i>  Home</a>
     <a href="<?php echo base_url("index.php/seller_ctrl/insert") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-plus-square fa-fw"></i>  Insert</a>
     <a href="<?php echo base_url("index.php/seller_ctrl/search") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-edit fa-fw"></i>  Update</a>
     <a href="<?php echo base_url("index.php/seller_ctrl/delete") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-remove fa-fw"></i>  Delete</a>
