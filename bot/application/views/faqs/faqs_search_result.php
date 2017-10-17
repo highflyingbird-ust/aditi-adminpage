@@ -40,7 +40,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 			<td>id</td>
 			<td>question</td>
 			<td>answer</td>
-			<td></td>
+			<td>Option</td>
 			
 		</tr>
 
@@ -55,7 +55,7 @@ foreach($data as $key => $value)
 				echo "</td><td>";
 				echo "<br>".$value->answer;
 				echo "</td><td>";
-				echo "<a href='faqs_search_edit/$value->id'><font color='green'><b>Answer It</b></font></a>";
+				echo "<a href='faqs_search_edit/$value->id'><font color='green'><b>Alter</b></font></a>";
 				
 				echo "</td></tr>";
 			

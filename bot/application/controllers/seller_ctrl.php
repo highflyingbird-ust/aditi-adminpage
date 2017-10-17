@@ -236,7 +236,7 @@ class Seller_ctrl extends CI_Controller
 		$this->load->view('faqs/faqs_edit',$data);
 	}
 	function faqs_update()
-	// ,$b2,$b3,$b4,$b5
+	
 	{
 		$id = $this->input->post('id');
 		$data1 = array(
@@ -249,6 +249,25 @@ class Seller_ctrl extends CI_Controller
 		$data['message']="record updated succesfully";
 		$this->load->view('faqs/faqs_search_submit',$data);
 		
+	}
+	function faqs_insert()
+	{
+		$data['data'] = $this->seller_model->faqs_lastid();
+		$data['message']="";
+		$this->load->view('faqs/faqs_insert',$data);
+	}
+	function faqs_insert1()
+	{
+		$id = $this->input->post('id');
+		$data1 = array(
+		'id' => $this->input->post('id'),
+		'question' => $this->input->post('question'),
+		'answer' => $this->input->post('answer'),
+		);
+		$this->seller_model->faqs_insert($data1);
+		$data['data'] = $this->seller_model->faqs_lastid();
+		$data['message']="record insert successfully";
+		$this->load->view('faqs/faqs_insert',$data);
 	}
 
 

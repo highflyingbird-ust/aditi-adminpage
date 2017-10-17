@@ -136,6 +136,19 @@ class Seller_model extends CI_Model
 	{
 		$result=$this->db->insert('client_details', $data);
 	}
+	public function faqs_lastid()
+	{
+		$this->db->select('id');
+		$this->db->from('client_questions');
+		$this ->db-> limit(1);
+		$this->db->order_by('id', 'desc');
+		$q = $this->db->get();
+		return $q->result();
+	}
+	public function faqs_insert($data)
+	{
+		$result=$this->db->insert('client_questions', $data);
+	}
 	//--------------------
 
 

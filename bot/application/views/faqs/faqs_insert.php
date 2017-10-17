@@ -28,22 +28,59 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 <!-- Top container -->
 
-<div class="row">
+	<div class="row">
 	<!-- <div class="col-sm-4"> -->
-<?php $this->load->view('nav'); ?>
+		 <?php $this->load->view('nav'); ?>
 <!-- </div> -->
 
-<?php echo form_open('seller_ctrl/faqs_searchsub');
-?>
+		 <?php echo form_open('seller_ctrl/faqs_insert1');
+		?>
+		<?php if(isset($message)) echo $message; ?>
 <!-- <div class="col-sm-8"> -->
-<center>
-	<br><br><br><br><br>
-	<?php if(isset($message)) echo $message; ?>
-	<br><br>
-<input type="text" name="search" placeholder="Enter the text" required="">
-<br><br>
-<input type="submit"  name="submit" value="search" >
-</center>
+		<center>
+			<br><br><br><br><br>
+			<table border="1">
+
+			<?php 
+			foreach($data as $rw)
+				{
+					?>
+				<tr>
+					<td>id&nbsp;&nbsp;&nbsp;</td>
+					<td>
+						<textarea name="id" id="id" cols="50"></textarea>
+					</td>
+				</tr>
+				<!-- <tr>
+					<td><br><br></td><td></td>
+				</tr> -->
+				<tr>
+					<td>Question&nbsp;&nbsp;&nbsp;</td>
+					<td>
+						<textarea name="question" id="question" cols="50"></textarea>
+					</td>
+				</tr>
+				<!-- <tr>
+					<td><br><br></td><td></td>
+				</tr> -->
+				<tr>
+					<td>Answer&nbsp;&nbsp;&nbsp;</td>
+					<td>
+						<textarea name="answer" id="answer" cols="50"></textarea>
+					</td>
+				</tr>
+				
+				<tr>
+					<td colspan="2">
+						<center>	
+							<input type="submit" name="insert" value="Add Log">
+						</center>
+					</td>
+
+				</tr>
+			<?php } ?>
+			</table>
+		</center>
 <!-- </div> -->
 <?php form_close(); ?>
 

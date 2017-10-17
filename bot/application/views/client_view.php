@@ -45,7 +45,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 			<th>sector</th>
 			<th>demo_type</th>
 			<th>&nbsp;&nbsp;miscellaneous</th>
-			<!-- <th></th> -->
+			<th></th>
 			
 		</tr>
         
