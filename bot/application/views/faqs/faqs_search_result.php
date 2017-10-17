@@ -28,47 +28,36 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <!-- Top container -->
 
 <div class="row">
-	<div class="w3-col s2">
-    
+	<div class="col-sm-3">
   <?php $this->load->view('nav'); ?>
 </div>
 
 <div class="w3-col s7 ">
 
-<br><br><br><br><br><br>
-
-    <table border=1><caption style=color:white;background-color:Tomato;>&nbsp;&nbsp;&nbsp;&nbsp;CLIENT DETAILS</caption>
-       <tr bgcolor=#87cefa;>
-			<th>id</th>
-			<th>client</th>
-			<th>primary_poc</th>
-			<th>sector</th>
-			<th>demo_type</th>
-			<th>&nbsp;&nbsp;miscellaneous</th>
-			<!-- <th></th> -->
+	<br><br><br><br><br>
+	<table border=1>
+		<tr>
+			<td>id</td>
+			<td>question</td>
+			<td>answer</td>
+			<td></td>
 			
 		</tr>
-        
+
 	<?php
 foreach($data as $key => $value)
 
 		{
-				echo "<tr><td><center>";
+				echo "<tr><td>";
 				echo "<br>".$value->id;
-				echo "</center></td><td><center>";
-				echo "<br>".$value->client;
-				echo "</center></td><td><center>";
-				echo "<br>".$value->primary_poc;
-				echo "</center></td><td><center>";
-				echo "<br>".$value->sector;
-				echo "</center></td><td><center>";
-				echo "<br>".$value->demo_type;
-				echo "</center></td><td><center>";
-				echo "<br>".$value->miscellaneous;
-				echo "</center></td></tr>";
-				// echo "<a href='search_edit/$value->id'><font color='green'><b>Edit</b></font></a>";
+				echo "</td><td>";
+				echo "<br>".$value->question;
+				echo "</td><td>";
+				echo "<br>".$value->answer;
+				echo "</td><td>";
+				echo "<a href='faqs_search_edit/$value->id'><font color='green'><b>Answer It</b></font></a>";
 				
-				// echo "</td></tr>";
+				echo "</td></tr>";
 			
 		}
 		?>
@@ -79,7 +68,6 @@ foreach($data as $key => $value)
 
 
 </div>
-
 </body>
 </html>
 <!-- 

@@ -2,7 +2,7 @@
 class Seller_model1 extends CI_Model
 {
 
-    public function lastid()
+    public function lastid1()
 	{
 		$this->db->select('id');
 		$this->db->from('client_details');
@@ -11,7 +11,7 @@ class Seller_model1 extends CI_Model
 		$q = $this->db->get();
 		return $q->result();
 	}
-	public function insert($data)
+	public function clients($data)
 	{
 		$result=$this->db->insert('client_details', $data);
 	}

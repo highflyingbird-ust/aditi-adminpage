@@ -12,11 +12,11 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <body class="w3-light-grey">
 
 <!-- Top container -->
-<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+<div class="w3-bar w3-top w3-transparent w3-large" style="z-index:4">
 
   <a href="<?php echo base_url("index.php/seller_ctrl/index");?>">
     <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
-    <span class="w3-bar-item w3-right">Logout</span>
+    <span class="w3-bar-botton w3-right">Logout</span>
   </a>
 </div>
 
@@ -27,7 +27,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <span class="w3-center"><font color="white">Admin</font></span>
   </div> -->
     <div class="w3-col s4">
-      <img src="/w3images/avatar2.png" class="w3-circle w3-margin-right" style="width:46px">
+      <img src="<?php echo base_url("assets/img/Aditi/010.png");?>" class="w3-rectangle w3-margin-right" style="width:150px">
     </div>
     <div class="w3-bar">
       <h4><span class="w3-right"><strong>Aditi</strong></span></h4>
@@ -49,8 +49,15 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <a href="<?php echo base_url("index.php/seller_ctrl/view") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-diamond fa-fw"></i>  View</a>
     <a href="<?php echo base_url("Classes/excel.php") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bell fa-fw"></i>  excel</a>
     <a href="<?php echo base_url("index.php/seller_ctrl/excel_converter") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bank fa-fw"></i>  excel converters</a> -->
-    <a href="<?php echo base_url("index.php/seller_ctrl/clients") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-plus-square fa-fw"></i>  New Client</a>
+    <!-- <a href="<?php echo base_url("index.php/seller_ctrl/view") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-diamond fa-fw"></i>  View</a> -->
     <a href="<?php echo base_url("index.php/seller_ctrl/client_view") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-diamond fa-fw"></i>  Client Details</a>
+    <a href="<?php echo base_url("index.php/seller_ctrl/clients") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-plus-square fa-fw"></i>  New Client</a>
+    
+    <!-- <a href="<?php echo base_url("index.php/seller_ctrl/search") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-plus-square fa-fw"></i>  Asset Catalog</a>
+    <a href="<?php echo base_url("index.php/seller_ctrl/delete") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-remove fa-fw"></i>  Delete</a> -->
+    <a href="<?php echo base_url("index.php/seller_ctrl/faqs") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bell fa-fw"></i>  Knowledge Base</a>
+    <a href="<?php echo base_url("index.php/seller_ctrl/faqs_search") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bell fa-fw"></i>  Update Answers</a>
+   
     <!-- <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history fa-fw"></i>  History</a> -->
     <!-- <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a> -->
     <br><br>
@@ -63,7 +70,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
   <!-- Footer -->
   <div class="w3-container w3-padding-6 w3-light-grey">
-    <h4>Bot Platform</h4>
+    <h4><center>Bot Platform</center></h4>
     <!-- <p>Powered by  <a href="#" target="_blank">Advocacy</a></p> -->
   </div>
 

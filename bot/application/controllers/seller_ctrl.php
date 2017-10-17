@@ -82,7 +82,7 @@ class Seller_ctrl extends CI_Controller
 	function search() 
 	{
 		$data['message']=" ";
-		$this->load->view('search',$data);
+		$this->load->view('asset_catalog/search_submit',$data);
 		//$this->load->view('date_search');
 	}
 	function search1() 
@@ -92,13 +92,13 @@ class Seller_ctrl extends CI_Controller
 		{	
 			// echo "<script>alert('Enter a valid Entry');</script>";
 			$data['message']="";
-			$this->load->view('search',$data);
+			$this->load->view('asset_catalog/search_submit',$data);
 		}
 		else
 		{
 			$data = $this->input->post('search');
 			$data1['data'] = $this->seller_model->search($data);
-			$this->load->view('search_result',$data1);
+			$this->load->view('asset_catalog/search_result',$data1);
 	
 
 		}
@@ -110,6 +110,11 @@ class Seller_ctrl extends CI_Controller
 		$this->load->view('edit',$data);
 	}
 
+	//---------faqs update
+	
+	
+	//------------
+	
 	function search_delete($id)
 	{
 		$this->seller_model->search_delete($id);
@@ -193,11 +198,77 @@ class Seller_ctrl extends CI_Controller
 		$data['data'] = $this->seller_model->viewallclients();
 		$this->load->view('client_view',$data);
 	}
-	//------------------
+	//------------------faqs view
+	function faqs()
+	{
+		$data['data'] = $this->seller_model->faqs_view();
+		$this->load->view('faqs/faqs_view',$data);
+	}
+	//--------------------------faqs search submission
+	function faqs_search() 
+	{
+		$data['message']=" ";
+		$this->load->view('faqs/faqs_search_submit',$data);
+		//$this->load->view('date_search');
+	}
+	function faqs_search1() 
+	{
+		$this->form_validation->set_rules('search','Search', 'required');
+		if ($this->form_validation->run() == FALSE) 
+		{	
+			// echo "<script>alert('Enter a valid Entry');</script>";
+			$data['message']="";
+			$this->load->view('faqs/faqs_search_submit',$data);
+		}
+		else
+		{
+			$data = $this->input->post('search');
+			$data1['data'] = $this->seller_model->faqs_search($data);
+			$this->load->view('faqs/faqs_search_result',$data1);
+	
+
+		}
+		
+	}
+	function faqs_search_edit($id)
+	{
+		$data['data']=$this->seller_model->faqs_edit_search($id);
+		$this->load->view('faqs/faqs_edit',$data);
+	}
+	function faqs_update()
+	// ,$b2,$b3,$b4,$b5
+	{
+		$id = $this->input->post('id');
+		$data1 = array(
+		'id' => $this->input->post('id'),
+		'question' => $this->input->post('question'),
+		'answer' => $this->input->post('answer'),
+		);
+		
+		$this->seller_model->faqs_update($data1,$id);
+		$data['message']="record updated succesfully";
+		$this->load->view('faqs/faqs_search_submit',$data);
+		
+	}
+
+
+
+
+	//------------
+
+
+	
 	function view()
 	{
 		$data['data'] = $this->seller_model->viewall();
 		$this->load->view('view',$data);
+		
+	}
+	function viewinsub()
+	{
+		$data2['data'] = $this->seller_model->viewallinsub();
+		$this->load->view('asset_catalog/search_submit',$data2);
+		
 	}
 	function convert()
 	{

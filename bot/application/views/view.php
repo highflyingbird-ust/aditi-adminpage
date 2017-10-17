@@ -27,17 +27,73 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 <!-- Top container -->
 
-<div class="row">
+<!-- <div class="row">
 	<div class="w3-col s1">
+  <?php //$this->load->view('nav'); ?>
+</div>
+
+<div class="w3-col s7 ">
+
+	<br><br><br><br><br>
+//<?php 
+//$this->load->view('view1');
+ ?>
+<br><br>
+
+</div>
+
+</div> -->
+<div class="row">
+	<div class="col-sm-3">
   <?php $this->load->view('nav'); ?>
 </div>
 
 <div class="w3-col s7 ">
 
 	<br><br><br><br><br>
-<?php 
-$this->load->view('view1');
- ?>
+	<table border=1>
+		<tr>
+			<td>id</td>
+			<td>innovation_area</td>
+			<td>asset_name</td>
+			<td>asset_summary</td>
+			<td>asset_poc</td>
+			<td>asset_type</td>
+			<td>asset_keywords</td>
+			<td>video</td>
+			<td>Operation</td>
+			<td></td>
+			
+		</tr>
+
+	<?php
+foreach($data as $key => $value)
+
+		{
+				echo "<tr><td>";
+				echo "<br>".$value->id;
+				echo "</td><td>";
+				echo "<br>".$value->innovation_area;
+				echo "</td><td>";
+				echo "<br>".$value->asset_name;
+				echo "</td><td>";
+				echo "<br>".$value->asset_summary;
+				echo "</td><td>";
+				echo "<br>".$value->asset_poc;
+				echo "</td><td>";
+				echo "<br>".$value->asset_type;
+				echo "</td><td>";
+				echo "<br>".$value->asset_keywords;
+				echo "</td><td>";
+				echo "<br>".$value->video;
+				echo "</td><td>";
+				echo "<a href='search_edit/$value->id'><font color='green'><b>Edit</b></font></a>" ," ","<a href='search_delete/$value->id'><font color='red'><b>Remove</b></font></a>";
+				
+				echo "</td></tr>";
+			
+		}
+		?>
+	</table>
 <br><br>
 
 </div>

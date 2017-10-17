@@ -23,65 +23,30 @@
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
+
 <body class="w3-light-grey">
 
 <!-- Top container -->
 
 <div class="row">
-	<div class="w3-col s2">
-    
-  <?php $this->load->view('nav'); ?>
-</div>
+	<!-- <div class="col-sm-4"> -->
+<?php $this->load->view('nav'); ?>
+<!-- </div> -->
 
-<div class="w3-col s7 ">
-
-<br><br><br><br><br><br>
-
-    <table border=1><caption style=color:white;background-color:Tomato;>&nbsp;&nbsp;&nbsp;&nbsp;CLIENT DETAILS</caption>
-       <tr bgcolor=#87cefa;>
-			<th>id</th>
-			<th>client</th>
-			<th>primary_poc</th>
-			<th>sector</th>
-			<th>demo_type</th>
-			<th>&nbsp;&nbsp;miscellaneous</th>
-			<!-- <th></th> -->
-			
-		</tr>
-        
-	<?php
-foreach($data as $key => $value)
-
-		{
-				echo "<tr><td><center>";
-				echo "<br>".$value->id;
-				echo "</center></td><td><center>";
-				echo "<br>".$value->client;
-				echo "</center></td><td><center>";
-				echo "<br>".$value->primary_poc;
-				echo "</center></td><td><center>";
-				echo "<br>".$value->sector;
-				echo "</center></td><td><center>";
-				echo "<br>".$value->demo_type;
-				echo "</center></td><td><center>";
-				echo "<br>".$value->miscellaneous;
-				echo "</center></td></tr>";
-				// echo "<a href='search_edit/$value->id'><font color='green'><b>Edit</b></font></a>";
-				
-				// echo "</td></tr>";
-			
-		}
-		?>
-	</table>
+<?php echo form_open('seller_ctrl/faqs_searchsub');
+?>
+<!-- <div class="col-sm-8"> -->
+<center>
+	<br><br><br><br><br>
+	<?php if(isset($message)) echo $message; ?>
+	<br><br>
+<input type="text" name="search" placeholder="Enter the text" required="">
 <br><br>
+<input type="submit"  name="submit" value="search" >
+</center>
+<!-- </div> -->
+<?php form_close(); ?>
 
 </div>
-
-
-</div>
-
 </body>
 </html>
-<!-- 
-echo "</td><td>";
-				echo "<a href='search_delete/$value->id'><font color='red'><b>Remove</b></font></a>"; -->

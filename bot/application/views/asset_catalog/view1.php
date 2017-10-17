@@ -3,7 +3,7 @@
 	<title></title>
 </head>
 <body>
-<div class="col-sm-8">
+<div class="w3-col s7 ">
 
 	<br><br><br><br><br>
 	<table border=1>

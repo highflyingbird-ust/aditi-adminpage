@@ -23,7 +23,36 @@
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
+<script type="text/javascript">
+// function f1()
+// {
+// var a = confirm('confirm to update');
+// var id = document.getElementById('id').value;
+// var b = document.getElementById("innovation_area").value;
+// var b1 = document.getElementById("asset_name").value;
+// var b2 = document.getElementById("asset_summary").value;
+// var b3 = document.getElementById("asset_poc").value;
+// var b4 = document.getElementById("asset_type").value;
+// var b5 = document.getElementById("asset_keywords").value;
+		
 
+// if (b=="")
+// {
+// 	b="null";
+// }
+// var base_url = "<?php echo base_url('index.php/seller_ctrl/update/"+id+"/"+b+"/"+b1+"') ?>";
+// // "/"+b2+"/"+b3+"/"+b4+"/"+b5+
+// // alert (base_url);
+// if(a==true)
+// {
+// 	window.location = base_url;
+// }
+// else
+// {
+
+// }
+// }
+</script>
 <body class="w3-light-grey">
 
 <!-- Top container -->
@@ -33,9 +62,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 		 <?php $this->load->view('nav'); ?>
 <!-- </div> -->
 
-		 <?php echo form_open('seller_ctrl/clients1');
+		 <?php echo form_open('seller_ctrl/faqs_update');
 		?>
-		<?php if(isset($message)) echo $message; ?>
 <!-- <div class="col-sm-8"> -->
 		<center>
 			<br><br><br><br><br>
@@ -46,64 +74,34 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 				{
 					?>
 				<tr>
-					<td>ID&nbsp;&nbsp;&nbsp;</td>
+					<td>id&nbsp;&nbsp;&nbsp;</td>
 					<td>
-						<input type="text" id="id" name="id" size=50 value="<?php echo $rw->id+1;?>"readonly>
+						<input type="text" id="id" name="id" size=50 value="<?php echo $rw->id;?>"readonly>
 					</td>
 				</tr>
 				<!-- <tr>
 					<td><br><br></td><td></td>
 				</tr> -->
 				<tr>
-					<td>Client&nbsp;&nbsp;&nbsp;</td>
+					<td>Question&nbsp;&nbsp;&nbsp;</td>
 					<td>
-						<textarea name="client" id="client" cols="50"></textarea>
+						<textarea name="question" id="question" cols="50"><?php echo $rw->question;?></textarea>
 					</td>
 				</tr>
 				<!-- <tr>
 					<td><br><br></td><td></td>
 				</tr> -->
 				<tr>
-					<td>Primary Poc&nbsp;&nbsp;&nbsp;</td>
+					<td>Answer&nbsp;&nbsp;&nbsp;</td>
 					<td>
-						<textarea name="primary_poc" id="primary_poc" cols="50"></textarea>
+						<textarea name="answer" id="answer" cols="50"><?php echo $rw->answer;?></textarea>
 					</td>
 				</tr>
-				<!-- <tr>
-					<td><br><br></td><td></td>
-				</tr> -->
-				<tr>
-					<td>Sector&nbsp;&nbsp;&nbsp;</td>
-					<td>
-						<textarea name="sector" id="sector" cols="50"></textarea>
-					</td>
-				</tr>
-				<!-- <tr>
-					<td><br><br></td><td></td>
-				</tr> -->
-				<tr>
-					<td>Demo Type&nbsp;&nbsp;&nbsp;</td>
-					<td>
-						<textarea name="demo_type" id="demo_type" cols="50"></textarea>
-					</td>
-				</tr>
-				<!-- <tr>
-					<td><br><br></td><td></td>
-				</tr> -->
-				<tr>
-					<td>Miscellaneous&nbsp;&nbsp;&nbsp;</td>
-					<td>
-						<textarea name="miscellaneous" id="miscellaneous" cols="50"></textarea>
-					</td>
-				</tr>
-				<!-- <tr>
-					<td><br><br></td><td></td>
-				</tr> -->
 				
 				<tr>
 					<td colspan="2">
-						<center>
-							<input type="submit" name="insert" value="Store" class="w3-blue" style=font-size:20px;>
+						<center>	
+							<input type="submit" name="update" value="Store Answer" onclick="f1();">
 						</center>
 					</td>
 
