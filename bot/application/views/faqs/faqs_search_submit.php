@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>BOT</title>
+<title>ADITI Admin Dashboard</title>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,7 +28,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 <!-- Top container -->
 <div class="row">
-	<div class="col-sm-3">
+	<!-- <div class="col-sm-3"> -->
 <?php $this->load->view('nav'); ?>
 </div>
 

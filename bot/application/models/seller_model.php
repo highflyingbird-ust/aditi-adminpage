@@ -136,6 +136,7 @@ class Seller_model extends CI_Model
 	{
 		$result=$this->db->insert('client_details', $data);
 	}
+	//------------------
 	public function faqs_lastid()
 	{
 		$this->db->select('id');

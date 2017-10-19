@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>BOT</title>
+<title>ADITI Admin Dashboard</title>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,7 +46,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 				{
 					?>
 				<tr>
-					<td>id&nbsp;&nbsp;&nbsp;</td>
+					<td><center>&nbsp;<span style="font-weight:bold">ID</span>&nbsp;</center></td>
 					<td>
 						<textarea name="id" id="id" cols="50"></textarea>
 					</td>
@@ -55,7 +55,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 					<td><br><br></td><td></td>
 				</tr> -->
 				<tr>
-					<td>Question&nbsp;&nbsp;&nbsp;</td>
+					<td><center>&nbsp;&nbsp;&nbsp;<span style="font-weight:bold">Question</span>&nbsp;&nbsp;&nbsp;</center></td>
 					<td>
 						<textarea name="question" id="question" cols="50"></textarea>
 					</td>
@@ -64,7 +64,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 					<td><br><br></td><td></td>
 				</tr> -->
 				<tr>
-					<td>Answer&nbsp;&nbsp;&nbsp;</td>
+					<td><center>&nbsp;<span style="font-weight:bold">Answer</span>&nbsp;</center></td>
 					<td>
 						<textarea name="answer" id="answer" cols="50"></textarea>
 					</td>
@@ -73,7 +73,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 				<tr>
 					<td colspan="2">
 						<center>	
-							<input type="submit" name="insert" value="Add Log">
+							<input type="submit" name="insert" value="Add Log" class="w3-blue" style=font-size:17px; >
 						</center>
 					</td>
 

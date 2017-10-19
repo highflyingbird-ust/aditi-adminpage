@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>BOT</title>
+<title>ADITI Admin Dashboard</title>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,7 +46,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 				{
 					?>
 				<tr>
-					<td>ID&nbsp;&nbsp;&nbsp;</td>
+					<td><center>&nbsp;&nbsp;&nbsp;<span style="font-weight:bold">ID</span>&nbsp;&nbsp;&nbsp;</center></td>
 					<td>
 						<input type="text" id="id" name="id" size=50 value="<?php echo $rw->id+1;?>"readonly>
 					</td>
@@ -55,7 +55,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 					<td><br><br></td><td></td>
 				</tr> -->
 				<tr>
-					<td>Client&nbsp;&nbsp;&nbsp;</td>
+					<td><center>&nbsp;&nbsp;&nbsp;<span style="font-weight:bold">Client</span>&nbsp;&nbsp;&nbsp;</center></td>
 					<td>
 						<textarea name="client" id="client" cols="50"></textarea>
 					</td>
@@ -64,7 +64,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 					<td><br><br></td><td></td>
 				</tr> -->
 				<tr>
-					<td>Primary Poc&nbsp;&nbsp;&nbsp;</td>
+					<td><center>&nbsp;&nbsp;&nbsp;<span style="font-weight:bold">Primary Poc</span>&nbsp;&nbsp;&nbsp;</center></td>
 					<td>
 						<textarea name="primary_poc" id="primary_poc" cols="50"></textarea>
 					</td>
@@ -73,7 +73,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 					<td><br><br></td><td></td>
 				</tr> -->
 				<tr>
-					<td>Sector&nbsp;&nbsp;&nbsp;</td>
+					<td><center>&nbsp;&nbsp;&nbsp;<span style="font-weight:bold">Sector</span>&nbsp;&nbsp;&nbsp;</center></td>
 					<td>
 						<textarea name="sector" id="sector" cols="50"></textarea>
 					</td>
@@ -82,7 +82,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 					<td><br><br></td><td></td>
 				</tr> -->
 				<tr>
-					<td>Demo Type&nbsp;&nbsp;&nbsp;</td>
+					<td><center>&nbsp;&nbsp;&nbsp;<span style="font-weight:bold">Demo Type</span>&nbsp;&nbsp;&nbsp;</center></td>
 					<td>
 						<textarea name="demo_type" id="demo_type" cols="50"></textarea>
 					</td>
@@ -91,7 +91,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 					<td><br><br></td><td></td>
 				</tr> -->
 				<tr>
-					<td>Miscellaneous&nbsp;&nbsp;&nbsp;</td>
+					<td><center>&nbsp;&nbsp;&nbsp;<span style="font-weight:bold">Miscellaneous</span>&nbsp;&nbsp;&nbsp;</center></td>
 					<td>
 						<textarea name="miscellaneous" id="miscellaneous" cols="50"></textarea>
 					</td>

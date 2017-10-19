@@ -12,7 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $config = array(
 	'default' => array(
-		'hostname' => 'http://aditi-webapp.azurewebsites.net/',
+		'hostname' => 'localhost',
 		'port'     => '11211',
 		'weight'   => '1',
 	),
