@@ -38,7 +38,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <!-- <div class="col-sm-8"> -->
 <center>
 	<br><br><br><br><br>
-	<?php if(isset($message)) echo $message; ?>
+	<span style="font-weight:bold">&nbsp;&nbsp;&nbsp;<?php if(isset($message)) echo $message; ?>&nbsp;&nbsp;&nbsp;</span>
+	
 	<br><br>
 <input type="text" name="search" placeholder="Enter the text" required="">
 <br><br>

@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'aditi-admin.mysql.database.azure.com',
-	'username' => 'aditi.admin@aditi-admin',
-	'password' => 'Bot@1234',
-	'database' => 'aditi_dashboard',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => 'root',
+	'database' => 'aditi_db',
 	'dbdriver' => 'mysqli',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

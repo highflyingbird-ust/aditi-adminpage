@@ -18,6 +18,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <a href="<?php echo base_url("index.php/seller_ctrl/index");?>">
     <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
     <span class="w3-bar-botton w3-right">Logout</span>
+    <h4><center>&nbsp;<span style="font-weight:bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bot Platform</span>&nbsp;</center></h4>
   </a>
 </div>
 
@@ -53,7 +54,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <a href="<?php echo base_url("index.php/seller_ctrl/view") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-diamond fa-fw"></i>  View</a>
     <a href="<?php echo base_url("index.php/seller_ctrl/search") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-plus-square fa-fw"></i>  Asset Catalog</a>
     <a href="<?php echo base_url("index.php/seller_ctrl/delete") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-remove fa-fw"></i>  Delete</a> -->
-    <a href="<?php echo base_url("index.php/seller_ctrl/client_view") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-diamond fa-fw"></i>  Client Logs</a>
+    <a href="<?php echo base_url("index.php/seller_ctrl/client_view") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-diamond fa-fw"></i>  Client Log</a>
     <a href="<?php echo base_url("index.php/seller_ctrl/clients") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-plus-square fa-fw"></i>  New Client</a>
     <a href="<?php echo base_url("index.php/seller_ctrl/faqs") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bell fa-fw"></i>  Knowledge Base</a>
     <a href="<?php echo base_url("index.php/seller_ctrl/faqs_search") ?>" class="w3-bar-item w3-button w3-padding"><i class="fa fa-edit fa-fw"></i>  Update Answers</a>
@@ -71,7 +72,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
   <!-- Footer -->
   <div class="w3-container w3-light-grey">
-    <h4><center>&nbsp;<span style="font-weight:bold">&nbsp;&nbsp;&nbsp;Bot Platform&nbsp;&nbsp;&nbsp;</span>&nbsp;</center></h4>
+    <h4><center>&nbsp;<span style="font-weight:bold">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</span>&nbsp;</center></h4>
     <!-- <p>Powered by  <a href="#" target="_blank">Advocacy</a></p> -->
   </div>
 

@@ -189,7 +189,7 @@ class Seller_ctrl extends CI_Controller
 		);
 		$this->seller_model->clients($data1);
 		$data['data'] = $this->seller_model->lastid1();
-		$data['message']="record insert successfully";
+		$data['message']="New Client Added Successfully";
 		$this->load->view('clients',$data);
 	}
 //---------------------------------client view
@@ -246,7 +246,7 @@ class Seller_ctrl extends CI_Controller
 		);
 		
 		$this->seller_model->faqs_update($data1,$id);
-		$data['message']="record updated succesfully";
+		$data['message']="Answer Updated succesfully";
 		$this->load->view('faqs/faqs_search_submit',$data);
 		
 	}
@@ -266,7 +266,7 @@ class Seller_ctrl extends CI_Controller
 		);
 		$this->seller_model->faqs_insert($data1);
 		$data['data'] = $this->seller_model->faqs_lastid();
-		$data['message']="record insert successfully";
+		$data['message']="New Question Added Successfully";
 		$this->load->view('faqs/faqs_insert',$data);
 	}
 

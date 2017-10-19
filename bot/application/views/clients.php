@@ -35,10 +35,12 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 		 <?php echo form_open('seller_ctrl/clients1');
 		?>
-		<?php if(isset($message)) echo $message; ?>
+		
 <!-- <div class="col-sm-8"> -->
 		<center>
-			<br><br><br><br><br>
+			<br><br><br>
+			<span style="font-weight:bold">&nbsp;&nbsp;&nbsp;<?php if(isset($message)) echo $message; ?>&nbsp;&nbsp;&nbsp;</span>
+			<br><br>
 			<table border="1">
 
 			<?php 
