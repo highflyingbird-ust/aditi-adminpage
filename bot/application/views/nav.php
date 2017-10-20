@@ -17,9 +17,9 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
   <a href="<?php echo base_url("index.php/seller_ctrl/index");?>">
     <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
-    <span class="w3-bar-botton w3-right">Logout</span>
-    <h4><center>&nbsp;<span style="font-weight:bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bot Platform</span>&nbsp;</center></h4>
+    <h4><span class="w3-bar-botton w3-right" style="color:red;">Logout&nbsp;&nbsp;&nbsp;</span></h4>
   </a>
+  <h4><center><span class="w3-center" style="color:blue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bot Platform</span></center></h4>
 </div>
 
 <!-- Sidebar/menu -->
