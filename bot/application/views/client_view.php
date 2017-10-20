@@ -44,6 +44,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 			<th>primary_poc</th>
 			<th>sector</th>
 			<th>demo_type</th>
+			<th>date_stamp</th>
 			<th>&nbsp;&nbsp;miscellaneous</th>
 			<th></th>
 			
@@ -63,6 +64,8 @@ foreach($data as $key => $value)
 				echo "<br>".$value->sector;
 				echo "</center></td><td><center>";
 				echo "<br>".$value->demo_type;
+				echo "</center></td><td><center>";
+				echo "<br>".$value->date_stamp;
 				echo "</center></td><td><center>";
 				echo "<br>".$value->miscellaneous;
 				echo "</center></td></tr>";
