@@ -84,9 +84,15 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 					<td><br><br></td><td></td>
 				</tr> -->
 				<tr>
-					<td><center>&nbsp;&nbsp;&nbsp;<span style="font-weight:bold">Demo Type</span>&nbsp;&nbsp;&nbsp;</center></td>
-					<td>
-						<textarea name="demo_type" id="demo_type" cols="50"></textarea>
+					<td height="55px"><center>&nbsp;&nbsp;&nbsp;<span style="font-weight:bold">Demo Type</span>&nbsp;&nbsp;&nbsp;</center></td>
+					<td height="55px">
+						<!-- <textarea name="demo_type" id="demo_type" cols="50"></textarea> -->
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<input name="demo_type" value="Quick" id="demo_type" type="radio" size=100>
+						Quick&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input name="demo_type" value="Detailed" id="demo_type" type="radio" size=100>
+						Detailed
+
 					</td>
 				</tr>
 				<!-- <tr>
