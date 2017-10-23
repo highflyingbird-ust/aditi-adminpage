@@ -39,13 +39,13 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
     <table border=1><caption style=color:white;background-color:Tomato;>&nbsp;&nbsp;&nbsp;&nbsp;CLIENT DETAILS</caption>
        <tr bgcolor=#87cefa;>
-			<th>id</th>
-			<th>client</th>
-			<th>primary_poc</th>
-			<th>sector</th>
-			<th>demo_type</th>
-			<th>date_stamp</th>
-			<th>&nbsp;&nbsp;miscellaneous</th>
+			<th><center>&nbsp;&nbsp;id&nbsp;&nbsp;</center></th>
+			<th><center>&nbsp;&nbsp;client&nbsp;&nbsp;</center></th>
+			<th><center>&nbsp;&nbsp;primary_poc&nbsp;&nbsp;</center></th>
+			<th><center>&nbsp;&nbsp;sector&nbsp;&nbsp;</center></th>
+			<th><center>&nbsp;&nbsp;demo_type&nbsp;&nbsp;</center></th>
+			<th><center>&nbsp;&nbsp;date_stamp&nbsp;&nbsp;</center></th>
+			<th><center>&nbsp;&nbsp;miscellaneous&nbsp;&nbsp;</center></th>
 			<th></th>
 			
 		</tr>
