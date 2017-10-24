@@ -8,6 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>ADITI Admin Dashboard</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
 
     <!-- Bootstrap -->
   <link href ="<?php echo base_url().'bootstrap/css/bootstrap.min.css';?>" rel="stylesheet">
@@ -74,7 +75,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <label>Password</label><input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
       <label class="checkbox">
         <!--<input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me-->
-		<center><a href="#">forgot password?</a></center>
+		<center><a href="#">Forgot Password?</a></center>
       </label>
       <input  class="btn btn-lg btn-primary btn-block" type="submit" name="submit" value='Login'> 
 	  </div>
