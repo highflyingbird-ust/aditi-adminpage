@@ -78,8 +78,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <!-- </div> --> 
 
   <!-- End page content -->
-</div>
-</div>
+<!-- </div>
+</div> -->
 
 <script>
 // Get the Sidebar
