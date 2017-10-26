@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <title>ADITI Admin Dashboard</title>
-<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+<!-- <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" /> -->
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -42,7 +42,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 	<span style="font-weight:bold">&nbsp;&nbsp;&nbsp;<?php if(isset($message)) echo $message; ?>&nbsp;&nbsp;&nbsp;</span>
 	
 	<br><br>
-<input type="text" name="search" placeholder="Enter the text" required="">
+<input type="text" name="search" placeholder="Enter the Client-ID" required="">
 <br><br>
 <input type="submit"  name="submit" value="search" >
 </center>

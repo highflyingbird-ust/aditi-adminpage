@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <title>ADITI Admin Dashboard</title>
-<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+<!-- <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" /> -->
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -72,6 +72,13 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 						<textarea name="answer" id="answer" cols="50"></textarea>
 					</td>
 				</tr>
+				<tr>
+					<td><center>&nbsp;<span style="font-weight:bold">Alternative Answer</span>&nbsp;</center></td>
+					<td>
+						<textarea name="alt_answer" id="alt_answer" cols="50"></textarea>
+					</td>
+				</tr>
+				
 				
 				<tr>
 					<td colspan="2">

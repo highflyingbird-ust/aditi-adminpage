@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <title>ADITI Admin Dashboard</title>
-<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+<!-- <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" /> -->
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,10 +38,11 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 	<br><br><br><br><br>
 	<table border=1>
 		<tr>
-			<td>id</td>
-			<td>question</td>
-			<td>answer</td>
-			<td>Option</td>
+			<td><center>&nbsp;&nbsp;id&nbsp;&nbsp;</center></td>
+			<td><center>&nbsp;&nbsp;question&nbsp;&nbsp;</center></td>
+			<td><center>&nbsp;&nbsp;answer&nbsp;&nbsp;</center></td>
+			<td><center>&nbsp;&nbsp;alt_answer&nbsp;&nbsp;</center></td>
+			<td><center>&nbsp;&nbsp;Option&nbsp;&nbsp;</center></td>
 			
 		</tr>
 
@@ -49,16 +50,18 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 foreach($data as $key => $value)
 
 		{
-				echo "<tr><td>";
+				echo "<tr><td><center>";
 				echo "<br>".$value->id;
-				echo "</td><td>";
+				echo "</center></td><td><center>";
 				echo "<br>".$value->question;
-				echo "</td><td>";
+				echo "</center></td><td><center>";
 				echo "<br>".$value->answer;
-				echo "</td><td>";
+				echo "</center></td><td><center>";
+				echo "<br>".$value->alt_answer;
+				echo "</center></td><td><center>";
 				echo "<a href='faqs_search_edit/$value->id'><font color='green'><b>Alter</b></font></a>";
 				
-				echo "</td></tr>";
+				echo "</center></td></tr>";
 			
 		}
 		?>

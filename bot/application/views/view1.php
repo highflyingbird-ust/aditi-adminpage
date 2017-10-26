@@ -1,6 +1,7 @@
 <html>
 <head>
 	<title></title>
+	<!-- <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" /> -->
 </head>
 <body>
 <div class="col-sm-8">

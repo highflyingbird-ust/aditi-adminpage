@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <title>ADITI Admin Dashboard</title>
-<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+<!-- <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" /> -->
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,6 +21,8 @@
 	<link href ="<?php echo base_url().'bootstrap/js/wow.min.js';?>" rel="stylesheet">
 	<link href ="<?php echo base_url().'bootstrap/js/jquery.easing.min.js';?>" rel="stylesheet">
 	<link href ="<?php echo base_url().'bootstrap/js/functions.js';?>" rel="stylesheet">
+	<link href ="<?php echo base_url().'bootstrap/js/jquery.confirm.js';?>" rel="stylesheet">
+	<link href ="<?php echo base_url().'bootstrap/js/jquery.confirm.min.js';?>" rel="stylesheet">
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
@@ -53,6 +55,12 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 // }
 // }
+
+
+//-------------------------------conformation popup
+function confirmation() {
+    confirm("Press a button!");
+}
 </script>
 <body class="w3-light-grey">
 
@@ -75,7 +83,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 				{
 					?>
 				<tr>
-					<td>id&nbsp;&nbsp;&nbsp;</td>
+					<td><center>&nbsp;&nbsp;&nbsp;ID&nbsp;&nbsp;&nbsp;</center></td>
 					<td>
 						<input type="text" id="id" name="id" size=50 value="<?php echo $rw->id;?>"readonly>
 					</td>
@@ -84,7 +92,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 					<td><br><br></td><td></td>
 				</tr> -->
 				<tr>
-					<td>Question&nbsp;&nbsp;&nbsp;</td>
+					<td><center>&nbsp;&nbsp;&nbsp;Question&nbsp;&nbsp;&nbsp;</center></td>
 					<td>
 						<textarea name="question" id="question" cols="50"><?php echo $rw->question;?></textarea>
 					</td>
@@ -93,16 +101,25 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 					<td><br><br></td><td></td>
 				</tr> -->
 				<tr>
-					<td>Answer&nbsp;&nbsp;&nbsp;</td>
+					<td><center>&nbsp;&nbsp;&nbsp;Answer&nbsp;&nbsp;&nbsp;</center></td>
 					<td>
 						<textarea name="answer" id="answer" cols="50"><?php echo $rw->answer;?></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td><center>&nbsp;&nbsp;&nbsp;Alternative Answer&nbsp;&nbsp;&nbsp;</center></td>
+					<td>
+						<textarea name="alt_answer" id="alt_answer" cols="50"><?php echo $rw->alt_answer;?></textarea>
 					</td>
 				</tr>
 				
 				<tr>
 					<td colspan="2">
-						<center>	
-							<input type="submit" name="update" value="Store Answer" onclick="f1();">
+						<center>
+						    <input type="submit" name="update" value="Store Answer" class="w3-blue" style=font-size:20px;>
+						    <!-- <button  onclick="confirmation()" class="w3-blue" style=font-size:17px; >Store Answer</button>
+							<input type="submit" name="update" value="ok"> -->
+							<!-- <input type="submit" name="update" value="Store Answer" class="w3-blue" style=font-size:17px; onclick="confirmation()"> -->
 						</center>
 					</td>
 
